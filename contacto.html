@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacto de Cafetería Aroma - Visítanos o escríbenos">
+    <title>Contacto | Cafetería Aroma</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <!-- ENCABEZADO Y NAVEGACIÓN  -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Logo de Cafetería Aroma" class="logo-img">
+            <h1>Cafetería Aroma</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Menú</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+        <section class="contacto">
+            <h2>Contáctanos</h2>
+            <p class="contacto-intro">
+                ¿Tienes alguna duda, sugerencia o quieres reservar? Escríbenos y te responderemos lo antes posible.
+            </p>
+
+            <form action="#" method="POST" class="formulario">
+                
+                <div class="campo">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej: Ana García" required>
+                </div>
+
+                <div class="campo">
+                    <label for="email">Correo electrónico:</label>
+                    <input type="email" id="email" name="email" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">Teléfono (opcional):</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="81 1234 5678">
+                </div>
+
+                <div class="campo">
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="reservacion">Reservación</option>
+                        <option value="evento">Evento privado</option>
+                        <option value="sugerencia">Sugerencia</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn">Enviar Mensaje</button>
+
+            </form>
+        </section>
+
+        <!-- Información adicional de contacto -->
+        <section class="info-contacto">
+            <div class="info-bloque">
+                <h3>Dirección</h3>
+                <p>Av. Café 123, Col. Centro<br>Monterrey, N.L.</p>
+            </div>
+            <div class="info-bloque">
+                <h3>Teléfono</h3>
+                <p>+52 81 1234 5678</p>
+            </div>
+            <div class="info-bloque">
+                <h3>Correo</h3>
+                <p>hola@cafeteriaaroma.com</p>
+            </div>
+            <div class="info-bloque">
+                <h3>Horario</h3>
+                <p>Lun a Sáb: 8:00 - 21:00<br>Dom: 9:00 - 18:00</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2026 Cafetería Aroma. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
